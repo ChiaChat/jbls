@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":jblst"))
+    implementation("com.github.chiachat:jblst:1.0.0")
     implementation("org.apache.tuweni:tuweni-ssz:2.0.0")
     implementation("org.apache.tuweni:tuweni-bytes:2.0.0")
     implementation("tech.pegasys:jblst")
