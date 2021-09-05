@@ -1,0 +1,3 @@
+[submodule "jblst"]
+	path = jblst
+	url = git@github.com:ChiaChat/jblst.git
