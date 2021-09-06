@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 import org.apache.tuweni.bytes.Bytes;
 import org.apache.tuweni.bytes.Bytes32;
 import org.apache.tuweni.bytes.Bytes48;
+import org.chiachat.jbls.util.SecureRandomProvider;
 import supranational.blst.BLST_ERROR;
 import supranational.blst.P2;
 import supranational.blst.P2_Affine;
@@ -32,7 +33,6 @@ import org.chiachat.jbls.impl.BLS12381;
 import org.chiachat.jbls.impl.KeyPair;
 import org.chiachat.jbls.impl.PublicKey;
 import org.chiachat.jbls.impl.Signature;
-import tech.pegasys.teku.infrastructure.crypto.SecureRandomProvider;
 
 public class BlstBLS12381 implements BLS12381 {
 

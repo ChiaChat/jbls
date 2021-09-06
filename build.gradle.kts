@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.chiachat"
-version = "1.0"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -23,4 +23,15 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "org.chiachat"
+            artifactId = "jbls"
+            version = "1.0.4"
+            from(components["java"])
+        }
+    }
 }
