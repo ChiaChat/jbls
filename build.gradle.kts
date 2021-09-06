@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.chiachat"
-version = "1.0.4"
+version = "1.0.5"
 
 repositories {
     mavenCentral()
@@ -30,8 +30,14 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "org.chiachat"
             artifactId = "jbls"
-            version = "1.0.4"
+            version = "1.0.5"
             from(components["java"])
         }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
     }
 }
